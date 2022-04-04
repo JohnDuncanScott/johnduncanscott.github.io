@@ -45,7 +45,7 @@ Deploys the code to the GitHub webpage.
 
 #### Troubleshooting
 * `fatal: A branch named 'gh-pages' already exists.` - run `rm -rf node_modules/.cache/gh-pages` and try again
-* `fatal: could not read Username for 'https://github.com': Invalid argument` - ?
+* `fatal: could not read Username for 'https://github.com': Invalid argument` - `git credential-manager-core` was updated in a later version of Git For Windows and the old version is no longer compatible. Re-installing Git For Windows fixed this
 
 ## Learn More
 
