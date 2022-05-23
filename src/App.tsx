@@ -1,13 +1,14 @@
 import './App.css';
 import { Route, Routes, NavLink } from "react-router-dom";
-import About from './About';
-import Home from './Home';
-import Contact from './Contact';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Home } from './Home';
+import { About } from './About';
+import { Contact } from './Contact';
+import { Layout } from './components/Layout';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="#home">Duncan Scott</Navbar.Brand>
@@ -22,12 +23,14 @@ function App() {
         </Container>
       </Navbar>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </div>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Layout>
+    </>
   );
 }
 
