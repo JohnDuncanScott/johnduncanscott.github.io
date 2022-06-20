@@ -1,8 +1,10 @@
-import { PropsWithChildren } from "react"
-import { Container } from "react-bootstrap"
+import { PropsWithChildren } from "react";
+import { Container } from "react-bootstrap";
 
-export const Layout = ({ children }: PropsWithChildren<{}>) => (
-    <Container>
-        { children }
-    </Container>
-)
+export const Layout = ({ children }: PropsWithChildren<Record<never, never>>) => {
+    return (
+        <Container>
+            { children }
+        </Container>
+    );
+};

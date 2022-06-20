@@ -1,24 +1,36 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+
+    // Strictness - start
+    // These are designed to be as strict as possible and do mostly make sense
+    "strict": true, // Sets many other options
+    "noUncheckedIndexedAccess": true, // Stops you accidentally getting undefined when doing something like object[nonExistentKey]
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    // 4.4 and above
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+    // Strictness - end
   },
   "include": [
     "src"
