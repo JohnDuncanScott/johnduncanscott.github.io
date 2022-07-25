@@ -2,9 +2,10 @@ export const Home = () => {
     return (
         <div className="App">
             <header className="App-header">
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
+                <h2>Home Page</h2>
+                <main>
+                    <p>This is the Home page</p>
+                </main>
             </header>
         </div>
     );

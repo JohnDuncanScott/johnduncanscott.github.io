@@ -3,26 +3,21 @@ import { NavLink } from "react-router-dom";
 
 export const NavigationBar = () => {
     return (
-        <Navbar bg="light" expand="sm">
+        <Navbar className="navbar-dark" expand="sm">
             <Container>
-                <Navbar.Brand href="#home">Duncan Scott</Navbar.Brand>
+                <NavLink className="navbar-brand" to="/">Duncan Scott</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav"> 
                     <Nav className="ms-auto">
                         {/*
                             This is quite confusing. NavLink comes from react-router-dom and handles the linking. However,
                             there's no styling for it. Nav.Link from the React Bootstrap components provides the actual
-                            styling
+                            styling and nav-link is the actual Bootstrap class.
+                            Also see https://stackoverflow.com/questions/55625431/warning-validatedomnesting-a-cannot-appear-as-a-descendant-of-a
                         */}
-                        <Nav.Link>
-                            <NavLink to="/">Home</NavLink>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <NavLink to="/about">About</NavLink>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <NavLink to="/contact">Contact</NavLink>
-                        </Nav.Link>
+                        <NavLink className="nav-link" to="/">Home</NavLink>
+                        <NavLink className="nav-link" to="/about">About</NavLink>
+                        <NavLink className="nav-link" to="/contact">Contact</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

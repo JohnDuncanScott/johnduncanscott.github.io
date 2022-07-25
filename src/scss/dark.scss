@@ -1,0 +1,88 @@
+// https://getbootstrap.com/docs/5.1/customize/sass/
+
+// Override theme
+
+// Setup palette
+$white: white;
+$gray-400: #ced4da;
+$bg-default: #212529;
+$bg-lighter: #495057;
+$bg-darker: black;
+
+// Links
+$navbar-dark-hover-color: $white;
+$link-color: $gray-400;
+$link-hover-color: $white;
+$btn-link-color: $white;
+
+// Button style
+$btn-border-radius: 1.5rem;
+$btn-border-width: 0.125rem;
+$btn-border-highlight-color: $white;
+
+// Set theme colours
+
+$body-bg: $bg-default;
+$body-color: $white;
+
+$primary: $white;
+$secondary: $bg-default;
+// Lighter than default background
+$light: $bg-lighter;
+// Darker than default background
+$dark: $bg-darker;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "light":      $light,
+  "dark":       $dark,
+);
+
+/*
+Include remainder of required Bootstrap stylesheets
+You cannot use the existing variables to help customisation due a limitation in Sass where once a default variable or map has been used, it cannot be updated
+https://blog.getbootstrap.com/2022/07/19/bootstrap-5-2-0/
+https://github.com/twbs/bootstrap/issues/35815
+https://github.com/twbs/bootstrap/issues/33263
+Looks like this will be fixed in v6 by pulling out the colours to a separate /colors file
+*/
+@import "~bootstrap/scss/bootstrap";
+
+// Customise button borders - create an expanding border effect
+// https://getbootstrap.com/docs/5.1/components/buttons/#mixins
+
+// General
+@each $colorLabel, $colorValue in $theme-colors {
+  .btn-#{$colorLabel} {
+    @include button-variant(
+      $colorValue,
+      $colorValue,
+      // Remove shading
+      $hover-background: $colorValue,
+      // Remove shading
+      $active-background: $colorValue);
+    // Stop box-shadow overlapping other components
+    margin: calc($btn-border-width / 2);
+    &:hover, &:focus, &:focus-visible, &:active {
+      // Make original border disappear into background
+      border-color: $bg-default;
+      // Create a secondary solid border to give an expansion effect
+      // The !important removes the box-shadow that appears when you click and hold on a button
+      box-shadow: 0 0 0 $btn-border-width $btn-border-highlight-color !important;
+    }
+  }
+}
+
+// Specific
+.btn-secondary {
+  border-color: $bg-lighter;
+}
+
+.btn-link {
+  &:hover, &:focus, &:focus-visible, &:active {
+    // Match button highlight behaviour above
+    border-color: $bg-default;
+    box-shadow: 0 0 0 $btn-border-width $btn-border-highlight-color;
+  }
+}
