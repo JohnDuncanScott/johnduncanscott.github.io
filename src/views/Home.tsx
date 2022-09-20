@@ -2,9 +2,9 @@ import { Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import linkedinLogo from "../assets/logos/linkedin.svg";
 import githubLogo from "../assets/logos/github.svg";
-import jagexLogo from "../assets/logos/jagex.png";
-import microsoftLogo from "../assets/logos/microsoft.svg.png";
-import amazonLogo from "../assets/logos/amazon.png";
+import jagexLogo from "../assets/logos/jagex.jpg";
+import microsoftLogo from "../assets/logos/microsoft.jpg";
+import amazonLogo from "../assets/logos/amazon.jpg";
 
 export const Home = () => {
     return (
@@ -20,7 +20,7 @@ export const Home = () => {
             <div className="position-absolute top-50 start-50 translate-middle rounded bg-secondary p-4 border border-lighter">
                 <h2 className="text-center text-primary">Principal Software Engineer</h2>
                 <p className="text-center">
-                    Currently at <Image height="16px" width="16px" src={jagexLogo} className="rounded-0.5" /> Jagex. <Image height="16px" width="16px" src={microsoftLogo} /> Ex-Microsoft, <Image height="18px" width="18px" src={amazonLogo} /> Ex-Amazon.
+                    Currently at <Image height="20px" width="20px" src={jagexLogo} /> Jagex. <Image height="20px" width="20px" src={microsoftLogo} /> Ex-Microsoft, <Image height="20px" width="20px" src={amazonLogo} /> Ex-Amazon.
                 </p>
                 {/*
                     Align items on both x and y axis (default is start left and stretch vertically).
