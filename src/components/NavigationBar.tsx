@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavigationBar = () => {
     return (
-        <Navbar className="navbar-dark" expand="sm">
+        <Navbar className="navbar-custom" expand="sm">
             <Container>
                 <NavLink className="navbar-brand" to="/">Duncan Scott</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

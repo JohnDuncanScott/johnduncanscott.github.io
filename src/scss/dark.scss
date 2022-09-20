@@ -4,14 +4,20 @@
 
 // Setup palette
 $white: white;
-$gray-400: #ced4da;
+$off-white: #ced4da; // $gray-400, primarily for text
 $bg-default: #212529;
-$bg-lighter: #495057;
-$bg-darker: black;
+// Slightly lighter than default background
+$bg-lighter: #343a40;
+// Much lighter than default background
+$bg-light: #495057;
+// Much darker than default background
+$bg-dark: black;
+
+// Navbar
+$navbar-dark-hover-color: $white;
 
 // Links
-$navbar-dark-hover-color: $white;
-$link-color: $gray-400;
+$link-color: $off-white;
 $link-hover-color: $white;
 $btn-link-color: $white;
 
@@ -20,23 +26,30 @@ $btn-border-radius: 1.5rem;
 $btn-border-width: 0.125rem;
 $btn-border-highlight-color: $white;
 
+// Rounding
+$border-radius-sm:  .4rem; // rounded-1
+$border-radius:     .6rem; // rounded-2
+$border-radius-lg:  .8rem; // rounded-3
+
 // Set theme colours
 
+// Defaults
 $body-bg: $bg-default;
-$body-color: $white;
+$body-color: $off-white;
 
 $primary: $white;
 $secondary: $bg-default;
-// Lighter than default background
-$light: $bg-lighter;
-// Darker than default background
-$dark: $bg-darker;
+$light: $bg-light;
+$lighter: $bg-lighter;
+$dark: $bg-dark;
 
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
   "light":      $light,
+  "lighter":    $lighter,
   "dark":       $dark,
+  "off-white":  $off-white,
 );
 
 /*
@@ -76,7 +89,7 @@ Looks like this will be fixed in v6 by pulling out the colours to a separate /co
 
 // Specific
 .btn-secondary {
-  border-color: $bg-lighter;
+  border-color: $bg-light;
 }
 
 .btn-link {
@@ -85,4 +98,11 @@ Looks like this will be fixed in v6 by pulling out the colours to a separate /co
     border-color: $bg-default;
     box-shadow: 0 0 0 $btn-border-width $btn-border-highlight-color;
   }
+}
+
+// Customise navbar
+
+.navbar-custom {
+  @extend .navbar-dark;
+  background-color: $bg-lighter;
 }
