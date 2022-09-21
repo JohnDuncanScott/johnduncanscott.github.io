@@ -20,7 +20,14 @@ export const Home = () => {
             <div className="position-absolute top-50 start-50 translate-middle rounded bg-secondary p-4 border border-lighter">
                 <h2 className="text-center text-primary">Principal Software Engineer</h2>
                 <p className="text-center">
-                    Currently at <Image height="20px" width="20px" src={jagexLogo} /> Jagex. <Image height="20px" width="20px" src={microsoftLogo} /> Ex-Microsoft, <Image height="20px" width="20px" src={amazonLogo} /> Ex-Amazon.
+                    {/*
+                        align-text-bottom ensures the logos are exactly centred with the text.
+                        Space characters are used to format the code more nicely while preserving spaces.
+                    */}
+                    Currently at&nbsp;
+                    <span className="d-inline-block"><Image height="20px" width="20px" src={jagexLogo} className="align-text-bottom" /> Jagex.&nbsp;</span>
+                    <span className="d-inline-block"><Image height="20px" width="20px" src={microsoftLogo} className="align-text-bottom" /> Ex-Microsoft,&nbsp;</span>
+                    <span className="d-inline-block"><Image height="20px" width="20px" src={amazonLogo} className="align-text-bottom" /> Ex-Amazon.</span>
                 </p>
                 {/*
                     Align items on both x and y axis (default is start left and stretch vertically).
