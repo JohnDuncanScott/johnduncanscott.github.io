@@ -15,7 +15,7 @@ export const Home = () => {
          * container-fluid sets width to 100% width all the time
          * flex-fill forces element to take up whole space
          */
-        <div className="container-fluid flex-fill position-relative bg-dark">
+        <div className="container-fluid flex-fill position-relative bg-dark bg-gradient">
             {/* Centre element */}
             <div className="position-absolute top-50 start-50 translate-middle rounded bg-secondary p-4 border border-lighter">
                 <h2 className="text-center text-primary">Principal Software Engineer</h2>
@@ -25,9 +25,9 @@ export const Home = () => {
                         Space characters are used to format the code more nicely while preserving spaces.
                     */}
                     Currently at&nbsp;
-                    <span className="d-inline-block"><Image height="20px" width="20px" src={jagexLogo} className="align-text-bottom" /> Jagex.&nbsp;</span>
-                    <span className="d-inline-block"><Image height="20px" width="20px" src={microsoftLogo} className="align-text-bottom" /> Ex-Microsoft,&nbsp;</span>
-                    <span className="d-inline-block"><Image height="20px" width="20px" src={amazonLogo} className="align-text-bottom" /> Ex-Amazon.</span>
+                    <span className="d-inline-block"><Image width="20px" height="20px" src={jagexLogo} className="align-text-bottom" /> Jagex.&nbsp;</span>
+                    <span className="d-inline-block"><Image width="20px" height="20px" src={microsoftLogo} className="align-text-bottom" /> Ex-Microsoft,&nbsp;</span>
+                    <span className="d-inline-block"><Image width="20px" height="20px" src={amazonLogo} className="align-text-bottom" /> Ex-Amazon.</span>
                 </p>
                 {/*
                     Align items on both x and y axis (default is start left and stretch vertically).
@@ -35,10 +35,10 @@ export const Home = () => {
                 */}
                 <div className="d-flex justify-content-center align-items-center gap-1">
                     <a href="https://www.linkedin.com/in/duncan-scott-ba10324/">
-                        <Button variant="primary py-1 px-2"><Image src={linkedinLogo} /></Button>
+                        <Button variant="primary py-1 px-2"><Image width="20px" height="27px" src={linkedinLogo} /></Button>
                     </a>
                     <a href="https://github.com/JohnDuncanScott">
-                        <Button variant="primary p-1"><Image src={githubLogo} /></Button>
+                        <Button variant="primary p-1"><Image width="27px" height="27px" src={githubLogo} /></Button>
                     </a>
                     <Button variant="primary">Projects</Button>
                 </div>
