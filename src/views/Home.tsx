@@ -40,7 +40,8 @@ export const Home = () => {
                     <a href="https://github.com/JohnDuncanScott">
                         <Button variant="primary p-1"><Image width="27px" height="27px" src={githubLogo} /></Button>
                     </a>
-                    <Button variant="primary">Projects</Button>
+                    {/* Disabled for release */}
+                    {/* <Button variant="primary">Projects</Button> */}
                 </div>
             </div>
         </div>
