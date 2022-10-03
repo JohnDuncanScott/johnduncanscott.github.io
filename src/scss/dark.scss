@@ -12,14 +12,22 @@ $bg-lighter: #343a40;
 $bg-light: #495057;
 // Much darker than default background
 $bg-dark: black;
+// External links
+$ext-link: rgb(140, 211, 238);
+$ext-link-hover: rgb(0, 234, 255);
+$ext-link-visited: DarkViolet;
+$ext-link-visited-hover: Fuchsia;
 
 // Navbar
 $navbar-dark-hover-color: $white;
 
 // Links
-$link-color: $off-white;
-$link-hover-color: $white;
-$btn-link-color: $white;
+$link-color: $ext-link;
+$link-hover-color: $ext-link-hover;
+$link-visited-color: $ext-link-visited; // Added, doesn't exist in Bootstrap
+$link-visited-hover-color: $ext-link-visited-hover; // Added, doesn't exist in Bootstrap
+$btn-link-color: $ext-link;
+$btn-link-hover-color: $ext-link-hover;
 
 // Button style
 $btn-border-radius: 1.5rem;
@@ -105,4 +113,18 @@ Looks like this will be fixed in v6 by pulling out the colours to a separate /co
 .navbar-custom {
   @extend .navbar-dark;
   background-color: $bg-lighter;
+}
+
+// Customise links
+
+a:hover {
+  color: $link-hover-color;
+}
+
+a:visited {
+  color: $link-visited-color;
+}
+
+a:visited:hover {
+  color: $link-visited-hover-color;
 }

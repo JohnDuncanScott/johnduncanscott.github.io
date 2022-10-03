@@ -11,16 +11,17 @@ export const ThemeDemo = () => {
                         <Button variant="secondary">Secondary</Button>
                         <Button variant="light">Light</Button>
                         <Button variant="dark">Dark</Button>
-                        <Button variant="link">Link</Button>
-                        <Button variant="link" disabled={true}>Disabled Link</Button>
+                        <Button variant="link" href="https://example.com/">Link button</Button>
+                        <Button variant="link" href="https://example.com/" disabled>Disabled Link button</Button>
                         <br />
                         <Button variant="primary">Primary</Button>
                         <Button variant="secondary">Secondary</Button>
                         <Button variant="light">Light</Button>
                         <Button variant="dark">Dark</Button>
-                        <Button variant="link">Link</Button>
-                        <Button variant="link" disabled={true}>Disabled Link</Button>
+                        <Button variant="link" href="https://example.com/">Link button</Button>
+                        <Button variant="link" href="https://example.com/" disabled>Disabled Link button</Button>
                         <p>Default text (text-off-white)</p>
+                        <p><a href="https://example.com/">Default link</a></p>
                         <p className="text-primary">text-primary some more text</p>
                         <p className="text-off-white">text-off-white some more text</p>
                         <p className="text-light">text-light some more text</p>
