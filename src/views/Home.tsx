@@ -25,9 +25,9 @@ export const Home = () => {
                         Space characters are used to format the code more nicely while preserving spaces.
                     */}
                     Currently at&nbsp;
-                    <span className="d-inline-block"><Image width="20px" height="20px" src={jagexLogo} className="align-text-bottom" /> Jagex.&nbsp;</span>
-                    <span className="d-inline-block"><Image width="20px" height="20px" src={microsoftLogo} className="align-text-bottom" /> Ex-Microsoft,&nbsp;</span>
-                    <span className="d-inline-block"><Image width="20px" height="20px" src={amazonLogo} className="align-text-bottom" /> Ex-Amazon.</span>
+                    <span className="d-inline-block"><Image width="23px" height="23px" src={jagexLogo} className="align-text-top border border-lighter" /> Jagex.&nbsp;</span>
+                    <span className="d-inline-block"><Image width="23px" height="23px" src={microsoftLogo} className="align-text-top border border-lighter" /> Ex-Microsoft,&nbsp;</span>
+                    <span className="d-inline-block"><Image width="23px" height="23px" src={amazonLogo} className="align-text-top border border-lighter" /> Ex-Amazon.</span>
                 </p>
                 {/*
                     Align items on both x and y axis (default is start left and stretch vertically).
