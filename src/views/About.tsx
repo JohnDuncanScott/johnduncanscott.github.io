@@ -7,7 +7,8 @@ export const About = () => {
         <Layout>
             <h2>About</h2>
             <main>
-                <p><Image src={profileImage} /></p>
+                {/* Set width and height explicitly to mitigate content layout shifts */}
+                <p><Image src={profileImage} width="200px" height="200px" alt="Profile picture" /></p>
                 <p>Ex-<b>Microsoft</b> & ex-<b>Amazon</b>. I have enabled my team to deliver high quality products on schedule, in difficult environments. I enjoy learning about new languages and frameworks, and also sharing knowledge with my team.</p>
                 <p>
                     <ul>
