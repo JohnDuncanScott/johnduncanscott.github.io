@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 export const NavigationBar = () => {
     return (
         <Navbar className="navbar-custom" expand="sm">
-            <Container>
+            {/* fluid stops the navbar components from jerking when breakpoints are crossed */}
+            <Container fluid>
                 <NavLink className="navbar-brand" to="/">Duncan Scott</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav"> 
