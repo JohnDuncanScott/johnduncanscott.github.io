@@ -6,7 +6,7 @@ export const Layout = ({ children }: PropsWithChildren<Record<never, never>>) =>
         <Container className="flex-fill mt-2" fluid>
             <Row>
                 <Col />
-                <Col xs={10} md={8} lg={6}>
+                <Col xs={12} md={8} lg={6}>
                     { children }
                 </Col>
                 <Col />
