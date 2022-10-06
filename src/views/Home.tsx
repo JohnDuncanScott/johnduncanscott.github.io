@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import linkedinLogo from "../assets/logos/linkedin.svg";
 import githubLogo from "../assets/logos/github.svg";
@@ -12,17 +12,22 @@ export const Home = () => {
          * Don't use h-100 otherwise navbar causes scrollbar to appear, instead use fill
          * (however, parent elements must all use h-100 to make this work)
          * https://stackoverflow.com/questions/15641142/bootstrap-fill-fluid-container-between-header-and-footer
-         * container-fluid sets width to 100% width all the time
+         * div + container-fluid or Container + fluid sets width to 100% width all the time
          * flex-fill forces element to take up whole space
          */
-        <div className="container-fluid flex-fill position-relative bg-dark bg-gradient">
-            {/* Centre element */}
+        <Container className="flex-fill position-relative bg-dark bg-gradient" fluid>
+            {/*
+                Centre element.
+                At low widths, keep "Principal" and "Software" together so the layout shape looks a bit
+                nicer
+            */}
             <div className="position-absolute top-50 start-50 translate-middle rounded bg-secondary p-4 border border-lighter">
-                <h2 className="text-center text-primary">Principal Software Engineer</h2>
+                <h2 className="text-center text-primary">Principal&nbsp;Software Engineer</h2>
                 <p className="text-center">
                     {/*
-                        align-text-bottom ensures the logos are exactly centred with the text.
+                        align-text-top ensures the logos are exactly centred with the text.
                         Space characters are used to format the code more nicely while preserving spaces.
+                        Spans are used to keep logos with their respective companies.
                     */}
                     Currently at&nbsp;
                     <span className="d-inline-block"><Image width="23px" height="23px" src={jagexLogo} className="align-text-top border border-lighter" /> Jagex.&nbsp;</span>
@@ -44,6 +49,6 @@ export const Home = () => {
                     {/* <Button variant="primary">Projects</Button> */}
                 </div>
             </div>
-        </div>
+        </Container>
     );
 };
