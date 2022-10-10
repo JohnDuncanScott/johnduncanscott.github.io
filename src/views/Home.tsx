@@ -25,14 +25,14 @@ export const Home = () => {
                 <h2 className="text-center text-primary">Principal&nbsp;Software Engineer</h2>
                 <p className="text-center">
                     {/*
-                        align-text-top ensures the logos are exactly centred with the text.
+                        align-text-bottom is mostly fine for both mobile and desktop. Could be tweaked further, but looks nice enough.
                         Space characters are used to format the code more nicely while preserving spaces.
                         Spans are used to keep logos with their respective companies.
                     */}
                     Currently at&nbsp;
-                    <span className="d-inline-block"><Image width="23px" height="23px" src={jagexLogo} className="align-text-top border border-lighter" /> Jagex.&nbsp;</span>
-                    <span className="d-inline-block"><Image width="23px" height="23px" src={microsoftLogo} className="align-text-top border border-lighter" /> Ex-Microsoft,&nbsp;</span>
-                    <span className="d-inline-block"><Image width="23px" height="23px" src={amazonLogo} className="align-text-top border border-lighter" /> Ex-Amazon.</span>
+                    <span className="d-inline-block"><Image width="23px" height="23px" src={jagexLogo} className="align-text-bottom border border-lighter" /> Jagex.&nbsp;</span>
+                    <span className="d-inline-block"><Image width="23px" height="23px" src={microsoftLogo} className="align-text-bottom border border-lighter" /> Ex-Microsoft,&nbsp;</span>
+                    <span className="d-inline-block"><Image width="23px" height="23px" src={amazonLogo} className="align-text-bottom border border-lighter" /> Ex-Amazon.</span>
                 </p>
                 {/*
                     Align items on both x and y axis (default is start left and stretch vertically).
