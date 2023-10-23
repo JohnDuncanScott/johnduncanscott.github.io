@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Home } from "../views/Home";
 import { About } from "../views/About";
 import { Contact } from "../views/Contact";
