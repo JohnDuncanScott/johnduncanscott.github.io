@@ -5,6 +5,7 @@ import githubLogo from "../assets/logos/github.svg";
 import jagexLogo from "../assets/logos/jagex.jpg";
 import microsoftLogo from "../assets/logos/microsoft.jpg";
 import amazonLogo from "../assets/logos/amazon.jpg";
+import { config } from "../config/config";
 
 export const Home = () => {
     return (
@@ -39,14 +40,12 @@ export const Home = () => {
                     https://getbootstrap.com/docs/5.0/utilities/spacing/#gap adds spacing between buttons
                 */}
                 <div className="d-flex justify-content-center align-items-center gap-1">
-                    <a href="https://www.linkedin.com/in/duncan-scott-ba10324/">
+                    <a href={config.linkedInLink}>
                         <Button variant="primary py-1 px-2"><Image width="20px" height="27px" src={linkedinLogo} /></Button>
                     </a>
-                    <a href="https://github.com/JohnDuncanScott">
+                    <a href={config.gitHubLink}>
                         <Button variant="primary p-1"><Image width="27px" height="27px" src={githubLogo} /></Button>
                     </a>
-                    {/* Disabled for release */}
-                    {/* <Button variant="primary">Projects</Button> */}
                 </div>
             </div>
         </Container>

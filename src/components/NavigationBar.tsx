@@ -1,12 +1,13 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { config } from "../config/config";
 
 export const NavigationBar = () => {
     return (
         <Navbar className="navbar-custom" expand="sm">
             {/* fluid stops the navbar components from jerking when breakpoints are crossed */}
             <Container fluid>
-                <NavLink className="navbar-brand" to="/">Duncan Scott</NavLink>
+                <NavLink className="navbar-brand" to="/">{config.displayName}</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     {/*

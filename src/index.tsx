@@ -9,7 +9,13 @@ import ReactGA from "react-ga4";
 const container = document.getElementById("root") as HTMLElement;
 const root = ReactDOMClient.createRoot(container);
 // https://stackoverflow.com/questions/49279820/adding-google-analytics-to-react
-ReactGA.initialize("G-Z4LLKX4B5Q");
+ReactGA.initialize([{
+    trackingId: "G-Z4LLKX4B5Q",
+    gtagOptions: {
+        // Website uses URL fragments which is lost by GA4 so send page views manually via Router.tsx
+        send_page_view: false
+    }
+}]);
 
 root.render(
     <React.StrictMode>

@@ -1,12 +1,7 @@
 import { Layout } from "../components/Layout";
 
-export enum ExternalLinkValue {
-    // Used for tips / donations
-    Tip = "https://ko-fi.com/duncanscott"
-}
-
 export interface ExternalRedirectsProps {
-    externalLinkValue: ExternalLinkValue;
+    externalLinkValue: string;
 }
 
 // https://reactgo.com/react-redirect-to-external-url/
@@ -16,7 +11,7 @@ export const ExternalRedirects = ({ externalLinkValue }: ExternalRedirectsProps)
 
     return (
         <Layout>
-            <h2>Redirecting to tip provider...</h2>
+            <h2>Redirecting...</h2>
         </Layout>
     );
 };

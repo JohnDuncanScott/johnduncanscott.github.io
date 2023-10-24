@@ -10,6 +10,25 @@ If you enjoy this project, please consider [:hearts: buying me a beer :beer: :he
 * Bootstrap 5
 * Sass (SCSS)
 
+# Customising
+
+## Style
+* `dark.scss` - contains all the styles
+* `ThemeDemo.tsx` - unlinked page that lets you see how the different components will appear (`/#/themedemo`)
+
+## .env variables
+See https://create-react-app.dev/docs/adding-custom-environment-variables/. These are used in the app via `config.ts` where possible. `index.html` has to use the `%...%` format.
+* `REACT_APP_DISPLAY_NAME` - your name you want displayed everywhere
+* `REACT_APP_GITHUB_LINK` - your GitHub profile page
+* `REACT_APP_LINKEDIN_LINK` - your LinkedIn profile page
+* `REACT_APP_TIP_LINK` - your donation / support / tip page
+
+## Miscellaneous
+* `FUNDING.yaml` - contains your donation / support / tip page. See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+* `manifest.json` - `name` contains your name
+* `package.json` - `homepage` contains your website
+* `views` - these contain your personal information
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

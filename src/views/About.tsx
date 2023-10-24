@@ -2,6 +2,7 @@ import { Layout } from "../components/Layout";
 import Image from "react-bootstrap/Image";
 import profileImage from "../assets/profile.png";
 import { ExternalLink } from "../components/ExternalLink";
+import { config } from "../config/config";
 
 export const About = () => {
     return (
@@ -23,7 +24,7 @@ export const About = () => {
                         <li><b>Experian</b> (~8 years) - <i>Test Automation Specialist</i> - Various testing tools (C#)</li>
                     </ul>
                 </p>
-                <p>See <ExternalLink href="https://www.linkedin.com/in/duncan-scott-ba10324/">LinkedIn</ExternalLink> for more details.</p>
+                <p>See <ExternalLink href={config.linkedInLink}>LinkedIn</ExternalLink> for more details.</p>
             </main>
         </Layout>
     );
