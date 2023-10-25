@@ -1,10 +1,19 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { config } from "../config/config";
 
 export const NavigationBar = () => {
+    const location = useLocation();
+
     return (
-        <Navbar className="navbar-custom" expand="sm">
+        /**
+         * Setting the key when the location changes forces the navbar to re-render. Without this there is a bug that only happens
+         * when using the browser back button. Steps: Click a navbar link, click a different navbar link, press back -> Note that
+         * the 2nd navbar link is still highlighted without this. According to the dev tools, the classes are correct, it's just
+         * not re-rendering correctly.
+         * See https://stackoverflow.com/questions/62721457/react-bootstrap-change-link-of-navbar-to-active (activeKey doesn't exist)
+         */
+        <Navbar key={location.pathname} className="navbar-custom" expand="sm">
             {/* fluid stops the navbar components from jerking when breakpoints are crossed */}
             <Container fluid>
                 <NavLink className="navbar-brand" to="/">{config.displayName}</NavLink>
