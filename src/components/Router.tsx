@@ -7,6 +7,7 @@ import { ExternalRedirects } from "../views/ExternalRedirects";
 import { config } from "../config/config";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
+import { Projects } from "../views/Projects";
 
 function Router() {
     /**
@@ -32,6 +33,7 @@ function Router() {
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
             {/* Special "hidden" page that makes it easier to test everything looks fine */}
             <Route path="/themedemo" element={<ThemeDemo />} />
             {/* External redirects */}

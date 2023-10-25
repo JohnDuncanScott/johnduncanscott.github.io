@@ -18,9 +18,6 @@ If you enjoy this project, please consider [:hearts: buying me a beer :beer: :he
 
 ## .env variables
 See https://create-react-app.dev/docs/adding-custom-environment-variables/. These are used in the app via `config.ts` where possible. `index.html` has to use the `%...%` format.
-* Call to action button - this is the button on the home page right next to your key information. Use it to take the user to your favourite thing
-  * `REACT_APP_CALL_TO_ACTION_NAME` - name for button
-  * `REACT_APP_CALL_TO_ACTION_LINK` - link for button
 * `REACT_APP_DISPLAY_NAME` - your name you want displayed everywhere
 * `REACT_APP_GITHUB_LINK` - your GitHub profile page
 * `REACT_APP_LINKEDIN_LINK` - your LinkedIn profile page

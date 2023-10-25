@@ -46,8 +46,8 @@ export const Home = () => {
                     <a href={config.gitHubLink}>
                         <Button variant="primary p-1"><Image width="27px" height="27px" src={githubLogo} /></Button>
                     </a>
-                    <a href={config.callToActionLink}>
-                        <Button variant="primary">{config.callToActionName}</Button>
+                    <a href="#/projects">
+                        <Button variant="primary">Projects</Button>
                     </a>
                 </div>
             </div>
