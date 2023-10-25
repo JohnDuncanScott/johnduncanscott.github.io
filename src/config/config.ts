@@ -17,6 +17,8 @@ function getEnvironmentVariable(environmentVariable: string) {
 }
 
 export const config = {
+    callToActionName: getEnvironmentVariable("REACT_APP_CALL_TO_ACTION_NAME"),
+    callToActionLink: getEnvironmentVariable("REACT_APP_CALL_TO_ACTION_LINK"),
     displayName: getEnvironmentVariable("REACT_APP_DISPLAY_NAME"),
     gitHubLink: getEnvironmentVariable("REACT_APP_GITHUB_LINK"),
     linkedInLink: getEnvironmentVariable("REACT_APP_LINKEDIN_LINK"),
