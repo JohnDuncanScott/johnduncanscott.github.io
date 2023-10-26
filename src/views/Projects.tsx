@@ -8,8 +8,8 @@ export const Projects = () => {
             <h2>Projects</h2>
             <main>
                 <ul>
-                    <li><ExternalLink href="https://itch.io/profile/duncanscott"><b>Games</b></ExternalLink></li>
-                    <li><ExternalLink href={config.gitHubLink}><b>GitHub</b></ExternalLink></li>
+                    <li><ExternalLink href="https://itch.io/profile/duncanscott">Games</ExternalLink></li>
+                    <li><ExternalLink href={config.gitHubLink}>GitHub</ExternalLink></li>
                 </ul>
             </main>
         </Layout>

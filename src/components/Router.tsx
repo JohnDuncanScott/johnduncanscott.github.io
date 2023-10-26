@@ -8,6 +8,7 @@ import { config } from "../config/config";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Projects } from "../views/Projects";
+import pkg from "../../package.json";
 
 function Router() {
     /**
@@ -21,10 +22,16 @@ function Router() {
     const location = useLocation();
 
     useEffect(() => {
+        // Change page title for clarity and analytics
+        const pageTitleSuffix = calculatePageTitleSuffix(location.pathname);
+        document.title = `${config.displayName} - ${config.occupation} - ${pageTitleSuffix}`;
+        // Add the root name of the website to make path unique
+        const path =`/${pkg.name}${location.pathname}`;
+        console.log(`Sending analytics, page title: ${document.title}, path: ${path}`);
         // https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#page
-        ReactGA.set({ page: location.pathname });
+        ReactGA.set({ page: path });
         // https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#hitType
-        ReactGA.send({ hitType: "pageview", page: location.pathname });
+        ReactGA.send({ hitType: "pageview", page: path });
     }, [location]);
 
     return (
@@ -42,6 +49,18 @@ function Router() {
             <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
     );
+}
+
+function calculatePageTitleSuffix(pathName: string): string {
+    if (pathName === "/") {
+        return "Home Page";
+    }
+
+    return capitalizeFirstLetter(pathName.substring(1));
+}
+
+function capitalizeFirstLetter(value: string): string {
+    return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
 export default Router;

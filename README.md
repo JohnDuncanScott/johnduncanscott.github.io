@@ -21,6 +21,7 @@ See https://create-react-app.dev/docs/adding-custom-environment-variables/. Thes
 * `REACT_APP_DISPLAY_NAME` - your name you want displayed everywhere
 * `REACT_APP_GITHUB_LINK` - your GitHub profile page
 * `REACT_APP_LINKEDIN_LINK` - your LinkedIn profile page
+* `REACT_APP_OCCUPATION` - your occupation
 * `REACT_APP_TIP_LINK` - your donation / support / tip page
 
 ## Miscellaneous

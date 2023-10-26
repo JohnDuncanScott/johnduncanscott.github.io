@@ -20,5 +20,6 @@ export const config = {
     displayName: getEnvironmentVariable("REACT_APP_DISPLAY_NAME"),
     gitHubLink: getEnvironmentVariable("REACT_APP_GITHUB_LINK"),
     linkedInLink: getEnvironmentVariable("REACT_APP_LINKEDIN_LINK"),
+    occupation: getEnvironmentVariable("REACT_APP_OCCUPATION"),
     tipLink: getEnvironmentVariable("REACT_APP_TIP_LINK")
 };
