@@ -22,7 +22,7 @@ function Router() {
     const location = useLocation();
 
     useEffect(() => {
-        // Change page title for clarity and analytics
+        // Change page title for clarity and analytics (will be picked up automatically when sending events)
         const pageTitleSuffix = calculatePageTitleSuffix(location.pathname);
         document.title = `${config.displayName} - ${config.occupation} - ${pageTitleSuffix}`;
         // Add the root name of the website to make path unique
