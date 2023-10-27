@@ -10,6 +10,9 @@ If you enjoy this project, please consider [:hearts: buying me a beer :beer: :he
 * Bootstrap 5
 * Sass (SCSS)
 
+# Setup
+1. You must create a .env file and setup the variables below otherwise the site will not load correctly.
+
 # Customising
 
 ## Style
