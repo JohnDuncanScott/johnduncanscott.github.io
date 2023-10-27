@@ -1,7 +1,7 @@
 # Introduction
-This code is for my personal website, which can be found here: http://johnduncanscott.github.io/personal-website/. Please feel free to use this as a template for your own website. You can find a theme demo at https://johnduncanscott.github.io/personal-website/#/themedemo.
+This code is for my personal website, which can be found here: http://johnduncanscott.github.io/. Please feel free to use this as a template for your own website. You can find a theme demo at https://johnduncanscott.github.io/#/themedemo.
 
-If you enjoy this project, please consider [:hearts: buying me a beer :beer: :hearts:](https://johnduncanscott.github.io/personal-website/#/tip) and starring :star: the project.
+If you enjoy this project, please consider [:hearts: buying me a beer :beer: :hearts:](https://johnduncanscott.github.io/#/tip) and starring :star: the project.
 
 ## Technology used
 * Google Analytics 4

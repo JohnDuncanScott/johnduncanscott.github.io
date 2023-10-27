@@ -1,6 +1,6 @@
 {
-  "name": "personal-website",
-  "homepage": "https://johnduncanscott.github.io/personal-website/",
+  "name": "user-github-page",
+  "homepage": "https://johnduncanscott.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
