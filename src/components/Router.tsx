@@ -8,7 +8,6 @@ import { config } from "../config/config";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { Projects } from "../views/Projects";
-import pkg from "../../package.json";
 
 function Router() {
     /**
@@ -25,8 +24,7 @@ function Router() {
         // Change page title for clarity and analytics (will be picked up automatically when sending events)
         const pageTitleSuffix = calculatePageTitleSuffix(location.pathname);
         document.title = `${config.displayName} - ${config.occupation} - ${pageTitleSuffix}`;
-        // Add the root name of the website to make path unique
-        const path =`/${pkg.name}${location.pathname}`;
+        const path = location.pathname;
         console.log(`Sending analytics, page title: ${document.title}, path: ${path}`);
         // https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#page
         ReactGA.set({ page: path });
