@@ -23,6 +23,7 @@ export const Home = () => {
                 nicer
             */}
             <div className="position-absolute top-50 start-50 translate-middle rounded bg-secondary p-4 border border-lighter">
+                <h1 className="text-center text-primary">{config.displayName}</h1>
                 <h2 className="text-center text-primary">Principal&nbsp;Software Engineer</h2>
                 <p className="text-center">
                     {/*
@@ -33,7 +34,7 @@ export const Home = () => {
                     Currently at&nbsp;
                     <span className="d-inline-block"><Image width="23px" height="23px" src={jagexLogo} className="align-text-bottom border border-lighter" /> Jagex.&nbsp;</span>
                     <span className="d-inline-block"><Image width="23px" height="23px" src={microsoftLogo} className="align-text-bottom border border-lighter" /> Ex-Microsoft,&nbsp;</span>
-                    <span className="d-inline-block"><Image width="23px" height="23px" src={amazonLogo} className="align-text-bottom border border-lighter" /> Ex-Amazon.</span>
+                    <span className="d-inline-block"><Image width="23px" height="23px" src={amazonLogo} className="align-text-bottom border border-lighter" /> ex-Amazon.</span>
                 </p>
                 {/*
                     Align items on both x and y axis (default is start left and stretch vertically).
