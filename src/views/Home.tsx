@@ -24,7 +24,7 @@ export const Home = () => {
             */}
             <div className="position-absolute top-50 start-50 translate-middle rounded bg-secondary p-4 border border-lighter">
                 <h1 className="text-center text-primary">{config.displayName}</h1>
-                <h2 className="text-center text-primary">Principal&nbsp;Software Engineer</h2>
+                <h4 className="text-center text-primary">Principal&nbsp;Software Engineer</h4>
                 <p className="text-center">
                     {/*
                         align-text-bottom is mostly fine for both mobile and desktop. Could be tweaked further, but looks nice enough.
