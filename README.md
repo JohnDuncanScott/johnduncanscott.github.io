@@ -3,6 +3,8 @@ This code is for my personal website, which can be found here: http://johnduncan
 
 If you enjoy this project, please consider [:hearts: buying me a beer :beer: :hearts:](https://johnduncanscott.github.io/#/tip) and starring :star: the project.
 
+![Screenshot](https://johnduncanscott.github.io/assets/projects/user-github-page_wide.png)
+
 ## Technology used
 * Google Analytics 4
 * React 17
